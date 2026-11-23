@@ -1,0 +1,47 @@
+.painel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+canvas {
+  background-color: #ffffff;
+  border: 2px solid #94a3b8;
+  border-radius: 8px;
+  cursor: crosshair; /*Muda o mouse para mira*/
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  background-color: #f1f5f9;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.toolbar {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  cursor: pointer;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+button.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}

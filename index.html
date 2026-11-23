@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Java Script aula html 5 - Canvas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="canvas.css">
+</head>
+
+<body>
+
+    <h2>Trabalhando com o Canvas - 2D</h2>
+
+    <canvas id="myCanvas" width="300" height="300" style="border: 3px solid palevioletred;">
+        Seu browser não suporta a tag do canvas.
+    </canvas>
+
+    <button id="btnline" onclick="linha();">Linha</button>
+    <button id="btncirc" onclick="circulo();">Círculo</button>
+    <button id="btnrect" onclick="retangulofixo();">Retangulo fixo</button>
+    <button id="btnclean" onclick="limparCanvas();">Limpar</button>
+
+    <h2>Canvas dentro das divs</h2>
+
+    <div class="painel">
+        <div class="card">
+            <h3>Canvas A</h3>
+            <canvas id="canvasA" width="300" height="300" style="border: 3px solid blueviolet;">
+                Seu browser não suporta a tag do canvas.
+            </canvas>
+        </div>
+
+        <div class="card">
+            <h3>Canvas B</h3>
+            <canvas id="canvasB" width="300" height="300" style="border: 3px solid blue;">
+                Seu browser não suporta a tag do canvas.
+            </canvas>
+        </div>
+    </div>
+
+    <h2>Quadro de Desenho com o Mouse</h2>
+
+    <div class="toolbar">
+        <button class="tool active" data-tool="linha">Linha</button>
+        <button class="tool" data-tool="retangulo">Retângulo</button>
+        <button class="tool" data-tool="circulo">Círculo</button>
+        <button class="tool" data-tool="borracha">Borracha</button>
+        <input type="color" id="cor" value="#000000" title="Escolha a cor">
+        <button id="limparTudo">Limpar Tudo</button>
+    </div>
+
+    <canvas id="quadro" width="800" height="500" style="border: 2px solid black;"></canvas>
+
+    <!-- O script e o fechamento do body devem ficar aqui no final -->
+    <script src="canvas.js"></script>
+</body>
+
+</html>
