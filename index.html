@@ -15,7 +15,7 @@
     <canvas id="myCanvas" width="300" height="300" style="border: 3px solid palevioletred;">
         Seu browser não suporta a tag do canvas.
     </canvas>
-
+    <br>
     <button id="btnline" onclick="linha();">Linha</button>
     <button id="btncirc" onclick="circulo();">Círculo</button>
     <button id="btnrect" onclick="retangulofixo();">Retangulo fixo</button>
@@ -39,20 +39,20 @@
         </div>
     </div>
 
-    <h2>Quadro de Desenho com o Mouse</h2>
+    <h2>Desenhar e Apagar com o Mouse</h2>
 
-    <div class="toolbar">
-        <button class="tool active" data-tool="linha">Linha</button>
-        <button class="tool" data-tool="retangulo">Retângulo</button>
-        <button class="tool" data-tool="circulo">Círculo</button>
-        <button class="tool" data-tool="borracha">Borracha</button>
-        <input type="color" id="cor" value="#000000" title="Escolha a cor">
-        <button id="limparTudo">Limpar Tudo</button>
-    </div>
+    <canvas id="quadro" width="400" height="400" style="border: 3px solid black;">
+        Seu browser não suporta a tag do canvas.
+    </canvas>
+    <br>
+    <button onclick="selecionarFerramenta('linha')">Linha</button>
+    <button onclick="selecionarFerramenta('circulo')">Círculo</button>
+    <button onclick="selecionarFerramenta('retangulo')">Retângulo</button>
+    <button onclick="selecionarFerramenta('borracha')">Borracha</button>
+    <button onclick="limparQuadro()">Limpar Tudo</button>
 
-    <canvas id="quadro" width="800" height="500" style="border: 2px solid black;"></canvas>
+    <p id="status">Ferramenta atual: linha</p>
 
-    <!-- O script e o fechamento do body devem ficar aqui no final -->
     <script src="canvas.js"></script>
 </body>
 
